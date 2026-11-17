@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruang Cerita</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="login-screen" class="screen auth-screen">
+    <div class="auth-card">
+      <div class="brand">
+        <div class="brand-icon">🌿</div>
+        <h1>Ruang Cerita</h1>
+        <p>Portal Siswa & Guru / Konselor</p>
+      </div>
+
+      <div class="form-group">
+        <label>Username</label>
+        <input id="login-username" value="siswa1" />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input id="login-password" type="password" value="siswa123" />
+      </div>
+
+      <div class="form-group">
+        <label>Masuk sebagai</label>
+        <select id="login-role">
+          <option value="siswa">Siswa</option>
+          <option value="guru">Guru / Konselor</option>
+        </select>
+      </div>
+
+      <button id="login-btn" class="primary-btn">Masuk ke Portal</button>
+
+      <div class="demo-box">
+        <strong>Akun demo:</strong><br />
+        • siswa1 / siswa123<br />
+        • siswa2 / siswa123<br />
+        • guru / guru123
+      </div>
+    </div>
+  </div>
+
+  <div id="app-screen" class="screen hidden">
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand-mini">
+          <div class="brand-icon mini">🌿</div>
+          <div>
+            <h2>Ruang Cerita</h2>
+            <small>Portal Siswa & Guru</small>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="user-box">
+            <div id="user-role-label" class="role-label">ROLE</div>
+            <div id="user-name-label" class="user-name">Nama</div>
+          </div>
+          <button id="logout-btn" class="ghost-btn">Keluar</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="app-main" class="container"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
